@@ -10,6 +10,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/people/:id', {
+        templateUrl: 'views/person.html',
+        controller: 'PersonCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
