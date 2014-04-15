@@ -2,5 +2,5 @@
 
 angular.module('conditionalModalApp')
   .controller('PersonCtrl', function ($scope, $routeParams, People) {
-    $scope.person = People[$routeParams.id];
+    $scope.person = $scope.person || People[$routeParams.id];
   });

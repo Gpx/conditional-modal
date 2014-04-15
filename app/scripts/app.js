@@ -2,7 +2,8 @@
 
 angular
   .module('conditionalModalApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngDialog'
   ])
   .config(function ($routeProvider) {
     $routeProvider
