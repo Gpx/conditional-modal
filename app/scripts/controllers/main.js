@@ -21,7 +21,7 @@ angular.module('conditionalModalApp')
         });
         setTimeout(function() {
           window.history.pushState('', '', '/#/people/' + match[1] + '?skip');
-        }, 5000);
+        }, 100);
       }
     });
   });
